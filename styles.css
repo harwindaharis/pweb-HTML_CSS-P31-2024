@@ -176,8 +176,8 @@ nav {
 }
 
 .about:hover {
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
-    transform: scale(1.02); /* Sedikit memperbesar container tanpa merubah bentuknya */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.02); 
 }
   
   
@@ -298,8 +298,8 @@ nav {
 }
 
 .menu-item:hover {
-    transform: translateY(-10px); /* Card will move up slightly */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -366,6 +366,80 @@ nav {
     text-align: left;
     align-items: left;
     width: 100%;
+}
+
+.cte {
+    display: flex;
+    position: relative; /* ngunci */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #461A08;    ;
+    border-radius: 30px;
+    padding-bottom: 50px;
+}
+
+.cte-text {
+    display: flex;
+    flex-direction: column;
+    width:70%;
+}
+
+.cte-text h1 {
+    font-size: 62px;
+    font-weight: 700;
+    color: #FFBB0C;
+    text-shadow: 3.5px 3.5px 0px #461A08;
+    margin-top: 40px;
+    margin-left: 10%;
+}
+
+
+.cte-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 10px ;
+    margin-left: 10%
+}
+
+.cte-text p{
+    width: 80%;
+}
+
+.button-cte {
+    padding: 10px 20px;
+    background-color: #FFBB0C;
+    color: #461A08;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+    width: 110px;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.cte-image {
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    width: 30%;
+}
+
+.cte-image img {
+    max-width: 25%;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 60px;
+    position: absolute;
 }
 
 @media (max-width: 768px) {
