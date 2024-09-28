@@ -1,0 +1,452 @@
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf0d5;
+    color: #333;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Galada', cursive;
+    color:#461A08
+}
+
+.logo span {
+    color: #E92C1B;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 20px;
+    height: fit-content;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 75px;
+    column-gap:30px;
+}
+    
+
+.nav-links a {
+    text-decoration: none;
+    color: #989898;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    
+}
+
+.nav-links a:hover {
+    color: #461A08;
+}
+
+/*.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    margin-top: 50px; 
+}*/
+
+.hero {
+    width: screen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+
+.hero-text {    
+    padding-left: 75px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #FFBB0C;
+    text-shadow: 3.5px 3.5px 0px #461A08;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #461A08;
+    margin-bottom: 40px;
+    width: 100%;
+    text-shadow: 0px 0px 4px #a8a8a8
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: #FFBB0C;
+    color: #461A08;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 3px 3px #461A08;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+    width: 65px;
+    text-align: center;
+
+}
+
+.button:hover {
+    transform: scale(1.05); 
+}
+
+.button:active {
+    transform: scale(0.98); 
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+}
+
+.hero-image img {
+    max-width: 60%;
+    height: auto;
+}
+/*.chili {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 20%;
+}
+
+.chili2 {
+    position: absolute;
+    top: 480px;
+    right: 0;
+    max-width: 10%;
+}
+
+.kuning {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    max-width: 15%;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 122px;
+    background-color: #E92C1B;
+    border-radius: 30px;
+}
+
+.about-text h1 {
+    display: flex;
+    font-size: 72px;
+    font-weight: 700;
+    color: #FFBB0C;
+    width: 100%;
+    text-shadow: 3.5px 3.5px 0px #461A08;
+    margin-top: 40px;
+    margin-left: 10%;
+}
+
+
+.about-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 12px ;
+    margin-left: 10%
+}
+
+.about-text p{
+    width: 60%;
+}
+
+.burger2 {
+    position: absolute;
+    right: 0;
+    max-width: 30%;
+    margin-top: 300px;
+    margin-right: 70px;
+}
+
+.kuning2 {
+    position: absolute;
+    right: 0;
+    max-width: 8%;
+    margin-bottom: 150px;
+}
+
+.daun1 {
+    position: absolute;
+    right: 0;
+    max-width: 8%;
+    margin-top: 400px;
+}
+
+.daun2 {    
+    position: absolute;
+    right: 0;
+    max-width: 30px;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+
+.daun3 {
+    position: absolute;
+    right: 0;
+    max-width: 90px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+}
+
+.daun4{
+    position: absolute;
+    right:0;
+    max-width: 80px;
+    margin-bottom: 200px;
+    margin-right:500px;
+}
+
+.daun5 {
+    position: absolute;
+    right:0;
+    max-width: 60px;
+    margin-bottom: 200px;
+    margin-right: 150px;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 15%;
+}
+
+.menu-text h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #461A08;
+    width: 100%;
+    text-shadow: 3.5px 3.5px 0px #FFBB0C;
+    align-items: center;
+    justify-content: center;
+    display:flex; 
+}
+
+@media (max-width: 768px) {
+    .chili2, 
+    .kuning,  
+    .daun1, 
+    .daun2, 
+    .burger2,
+    .daun3, 
+    .burger-right,
+    .daun4, 
+    .daun5 {
+        display: none; 
+    }
+    .about-text h1 {
+        font-size: 36px;
+    }
+
+    .abour-text p {
+        font-size: 12px;
+    }
+
+    .kuning2 {
+        display: block;
+        position:absolute;
+        right: 0;
+        max-width: 8%;
+        margin-bottom: 300px;
+    }
+
+    .chili {
+        position: absolute;
+        display: block;
+        top: 5%;
+        right: 0;
+        max-width: 8%;
+    }
+
+    .daun1 {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 8%;
+        margin-top: 200px;
+    }
+
+    .daun2 {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 30px;
+        margin-top: 50px;
+        margin-right: 70px;
+    }
+
+    .daun3 {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 30px;
+        margin-bottom: 100px;
+        margin-right: 3px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+} 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .chili2, 
+    .kuning,  
+    .daun1, 
+    .daun2, 
+    .burger2,
+    .daun3, 
+    .daun4, 
+    .daun5 {
+        display: none; 
+    }
+    .about-text h1 {
+        font-size: 48px;
+    }
+
+    .abour-text p {
+        font-size: 14px;
+    }
+
+    .kuning2 {
+        display: block;
+        position:absolute;
+        right: 0;
+        max-width: 8%;
+        margin-bottom: 250px;
+    }
+
+    .chili {
+        position: absolute;
+        display: block;
+        top: 5%;
+        right: 0;
+        max-width: 8%;
+    }
+
+    .daun1 {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 8%;
+        margin-top: 400px;
+    }
+
+    .daun2 {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 30px;
+        margin-top: 50px;
+        margin-right: 100px;
+    }
+
+    .daun3 {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 30px;
+        margin-bottom: 100px;
+        margin-right: 30px;
+    }
+
+    .daun4 {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 30px;
+        margin-bottom: 200px;
+        margin-right: 250px;
+    }
+
+    .burger-right {
+        display: block;
+        position: absolute;
+        top: 150px;
+        right: 5%;
+        max-width: 28%;   
+    }
+
+    .burger2 {
+        display: block;
+        position: absolute;
+        right: 0;
+        max-width: 30%;
+        margin-top: 300px;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .about {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        background-color: #E92C1B;
+        border-radius: 30px;
+    }
+} 
+*/
