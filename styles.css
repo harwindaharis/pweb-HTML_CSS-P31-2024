@@ -25,7 +25,7 @@ body {
 .logo span {
     color: #E92C1B;
 }
-
+/* General Styles */
 .navbar {
     width: 100%;
     position: fixed;
@@ -41,7 +41,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: fit-content;
-    
 }
 
 .nav-links {
@@ -49,22 +48,89 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
     margin: 50px;
-    column-gap:30px;
+    column-gap: 30px;
 }
-    
 
 .nav-links a {
     text-decoration: none;
     color: #989898;
     font-weight: 500;
-    transition: color 0.3s ease;  
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #461A08;
 }
+
+/* Mobile Styles */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.mobile-sidebar {
+    display: none;  /* Completely hidden by default */
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 15;
+    padding: 20px;
+}
+
+.mobile-sidebar.open {
+    display: block; /* Make sidebar visible when open */
+    right: 0;      /* Slide it from the right */
+}
+
+.mobile-sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.mobile-sidebar ul li {
+    margin: 20px 0;
+}
+
+.mobile-sidebar ul li a {
+    text-decoration: none;
+    color: #461A08;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mobile-sidebar ul li a:hover {
+    color: #d35400;
+}
+
+.close-btn {
+    font-size: 30px;
+    color: #461A08;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 30px;
+    }
+}
+
+
 
 .hero {
     width: 100%;
@@ -81,6 +147,11 @@ nav {
     display: flex;
     flex-direction: column;
     width:60%;
+    @media (max-width: 1024px) {
+        width: 100%;
+        padding-right: 10px;
+        padding-top: 30px;
+    }
 }
 
 .hero-text {    
@@ -93,6 +164,10 @@ nav {
     margin-bottom: 12px;
     color: #FFBB0C;
     text-shadow: 3.5px 3.5px 0px #461A08;
+    @media screen and (max-width: 1024px) {
+        font-size: 34px;
+        
+    }
 }
 
 .hero p {
@@ -101,7 +176,10 @@ nav {
     color: #461A08;
     margin-bottom: 40px;
     width: 100%;
-    text-shadow: 0px 0px 4px #a8a8a8
+    text-shadow: 0px 0px 4px #a8a8a8;
+    @media screen and (max-width: 1024px) {
+        font-size: 10px;
+    }
 }
 
 .button {
@@ -119,6 +197,7 @@ nav {
     transition: transform 0.2s ease-in-out;
     width: 65px;
     text-align: center;
+    margin-bottom: 20px;
 
 }
 
@@ -189,6 +268,9 @@ nav {
     text-shadow: 3.5px 3.5px 0px #461A08;
     margin-top: 40px;
     margin-left: 10%;
+    @media (max-width: 1024px) {
+        font-size: 34px;
+    }
 }
 
 
@@ -211,6 +293,10 @@ nav {
     max-width: 30%;
     margin-top: 300px;
     margin-right: 70px;
+    @media (min-width: 425px) {
+        width: 100%;
+        bottom:-20px;
+    }
 }
 
 .kuning2 {
@@ -278,6 +364,14 @@ nav {
     justify-content: center;
     display:flex;
     margin-top: 200px;
+    @media (max-width: 1024px) {
+        font-size: 60px;
+    }
+    @media (max-width: 768px) {
+        font-size: 48px;
+        
+    }
+
 
 }
 
@@ -287,6 +381,13 @@ nav {
     font-weight: 400;
     font-style: italic;
     color: #461A08;
+    @media (max-width: 1024px) {
+        font-size: 18px;
+        text-align: center;
+    }
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 .menu-container {
@@ -295,6 +396,16 @@ nav {
     grid-gap: 15px;
     max-width: 1050px;
     margin-top: 70px;
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap: 0px;
+        max-width: 700px;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 0px;
+        max-width: 350px;
+    }
 }
 
 .menu-item:hover {
@@ -335,6 +446,9 @@ nav {
     margin-top: 10px;
     width: 100%;
     text-align:left;
+    @media (max-width: 1024px) {
+        font-size: 18px;
+    }
 }
 
 .menu-item p {
@@ -343,6 +457,9 @@ nav {
     color: #461A08;
     margin-top: 5px;
     text-align:left;
+    @media (max-width: 1024px) {
+        font-size: 10px;
+    }
 }
 
 .menu-item h6{
@@ -354,6 +471,9 @@ nav {
     margin-top: 5px;
     text-align:left;
     margin-top: 20px;
+    @media (max-width: 1024px) {
+        font-size: 14px;
+    }
 }
 
 .menu-item span {
@@ -378,6 +498,9 @@ nav {
     background-color: #461A08;    ;
     border-radius: 30px;
     padding-bottom: 50px;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
 }
 
 .cte-text {
@@ -393,6 +516,9 @@ nav {
     text-shadow: 3.5px 3.5px 0px #461A08;
     margin-top: 40px;
     margin-left: 10%;
+    @media (max-width: 1024px) {
+        font-size: 34px;
+    }
 }
 
 
@@ -403,6 +529,7 @@ nav {
     margin-bottom: 40px;
     margin-top: 10px ;
     margin-left: 10%
+
 }
 
 .cte-text p{
@@ -427,6 +554,15 @@ nav {
     margin-top: 10px;
 }
 
+.button-cte:hover {
+    transform: scale(1.05); 
+}
+
+.button-cte:active {
+    transform: scale(0.98); 
+}
+
+
 .cte-image {
     display: flex;
     justify-content: start;
@@ -440,6 +576,9 @@ nav {
     margin-left: 100px;
     margin-top: 60px;
     position: absolute;
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -449,29 +588,14 @@ nav {
     .daun2, 
     .hero-image,
     .daun3, 
-    .daun4, 
+    .daun4,
+    .cte-image, 
     .daun5 {
         display: none; 
     }
 
-    .burger2 {
-        position:absolute;
-        justify-content: center;
-    }
-    .about-text h1 {
-        font-size: 24px;
-    }
-
-    .about-text p {
-        font-size: 8px;
-    }
-
-    .kuning2 {
-        display: block;
-        position:absolute;
-        right: 0;
-        max-width: 8%;
-        margin-bottom: 300px;
+    .nav-links {
+        display: none;
     }
 
     .chili {
@@ -482,40 +606,17 @@ nav {
         max-width: 8%;
     }
 
-    .daun1 {
-        display: block;
+
+
+
+    .burger2 {
         position: absolute;
         right: 0;
-        max-width: 8%;
-        margin-top: 200px;
+        max-width: 30%;
+        margin-right: 20px;
     }
 
-    .daun2 {
-        display: block;
-        position: absolute;
-        right: 0;
-        max-width: 30px;
-        margin-top: 50px;
-        margin-right: 70px;
-    }
-
-    .daun3 {
-        display: block;
-        position: absolute;
-        right: 0;
-        max-width: 30px;
-        margin-bottom: 100px;
-        margin-right: 3px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-    }
-} 
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .chili2, 
@@ -622,4 +723,5 @@ nav {
         background-color: #E92C1B;
         border-radius: 30px;
     }
-} 
+
+}

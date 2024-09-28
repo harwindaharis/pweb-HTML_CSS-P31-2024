@@ -11,16 +11,30 @@
     <section id="hero" class="Herosec">
         <nav>
             <div class="navbar">
-            <div class="logo">Burger<span>Eat</span></div>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#catalog">Menu</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Testimonials</a></li>
-            </ul>
-        </div>
+                <div class="logo">Burger<span>Eat</span></div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#catalog">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+            </div>
+            <div class="mobile-sidebar">
+                <span class="close-btn" onclick="closeSidebar()">&times;</span>
+                <ul>
+                    <li><a href="#hero" onclick="closeSidebar()">Home</a></li>
+                    <li><a href="#about" onclick="closeSidebar()">About</a></li>
+                    <li><a href="#catalog" onclick="closeSidebar()">Menu</a></li>
+                    <li><a href="#" onclick="closeSidebar()">Gallery</a></li>
+                    <li><a href="#" onclick="closeSidebar()">Testimonials</a></li>
+                </ul>
+            </div>
         </nav>
+        
+        
+        
         <div class="hero">
             <img src="image/Chillimerah.png" class="chili">
             <img src="image/Chilliijo.png" class="chili2">
@@ -121,13 +135,32 @@
                     <p>Indulge in the juiciest, most flavorful burgers made fresh just for you. Whether you're craving something classic or bold, we've got the perfect bite waiting!</p>
                     <a href="https://wa.me/6282132960752" class="button-cte">Click to Order!</a>
             </div>
-        </section>
-        </section>
-
-            <div>
-
-            </div>
+        </section>  
 
     </section>
+
+    <script>
+function toggleSidebar() {
+    const sidebar = document.querySelector('.mobile-sidebar');
+    if (sidebar.classList.contains('open')) {
+        sidebar.style.right = '-250px';  
+        setTimeout(() => {
+            sidebar.classList.remove('open');  
+        }, 300);  
+    } else {
+        sidebar.classList.add('open');
+        sidebar.style.right = '0'; 
+    }
+}
+
+function closeSidebar() {
+    const sidebar = document.querySelector('.mobile-sidebar');
+    sidebar.style.right = '-250px';  
+    setTimeout(() => {
+        sidebar.classList.remove('open');  
+    }, 300);  
+}
+
+    </script>
 </body>     
 </html>
