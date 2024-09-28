@@ -1,6 +1,6 @@
 
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -8,6 +8,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fdf0d5;
     color: #333;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -15,7 +17,9 @@ body {
     font-size: 24px;
     font-weight: 700;
     font-family: 'Galada', cursive;
-    color:#461A08
+    color:#461A08;
+    width: 30%;
+    margin: 50px;
 }
 
 .logo span {
@@ -23,10 +27,10 @@ body {
 }
 
 .navbar {
+    width: 100%;
     position: fixed;
     display: flex;
-    width: 100%;
-    margin-top: 20px;
+    margin-top: 70px;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
@@ -36,7 +40,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding : 20px;
     height: fit-content;
     
 }
@@ -47,7 +50,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    margin: 75px;
+    margin: 50px;
     column-gap:30px;
 }
     
@@ -56,38 +59,32 @@ nav {
     text-decoration: none;
     color: #989898;
     font-weight: 500;
-    transition: color 0.3s ease;
-    
+    transition: color 0.3s ease;  
 }
 
 .nav-links a:hover {
     color: #461A08;
 }
 
-/*.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10%;
-    margin-top: 50px; 
-}*/
-
 .hero {
-    width: screen;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    position: relative;
 }
+
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    width:100%
+    width:60%;
 }
 
 .hero-text {    
-    padding-left: 75px;
+    padding-left: 10%;
 }
 
 .hero h1 {
@@ -135,52 +132,60 @@ nav {
 
 .hero-image {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items:center;
-    width: 100%;
+    width: 40%;
+    padding-right: 75px;
 }
 
 .hero-image img {
-    max-width: 60%;
+    max-width: 80%;
     height: auto;
 }
-/*.chili {
+
+.chili {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
     max-width: 20%;
 }
 
 .chili2 {
     position: absolute;
-    top: 480px;
+    bottom: 0;
     right: 0;
     max-width: 10%;
 }
 
 .kuning {
     position: absolute;
-    top: 72px;
+    top: 15px;
     left: 0;
     max-width: 15%;
 }
 
 .about {
     display: flex;
+    position: relative; /* ngunci */
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-top: 122px;
+    margin-top: 90px;
     background-color: #E92C1B;
     border-radius: 30px;
 }
 
+.about:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+    transform: scale(1.02); /* Sedikit memperbesar container tanpa merubah bentuknya */
+}
+  
+  
+
 .about-text h1 {
-    display: flex;
     font-size: 72px;
     font-weight: 700;
     color: #FFBB0C;
-    width: 100%;
     text-shadow: 3.5px 3.5px 0px #461A08;
     margin-top: 40px;
     margin-left: 10%;
@@ -218,47 +223,49 @@ nav {
 .daun1 {
     position: absolute;
     right: 0;
+    bottom: -70px;
     max-width: 8%;
-    margin-top: 400px;
 }
 
 .daun2 {    
     position: absolute;
     right: 0;
     max-width: 30px;
-    margin-top: 50px;
-    margin-right: 70px;
+    top:200px;
+    right: 70px;
 }
 
 .daun3 {
     position: absolute;
-    right: 0;
+    right: 300px;
+    top: 90px;
     max-width: 90px;
-    margin-bottom: 100px;
-    margin-right: 300px;
 }
 
 .daun4{
     position: absolute;
     right:0;
     max-width: 80px;
-    margin-bottom: 200px;
-    margin-right:500px;
+    bottom: 250px;
+    right:500px;
 }
 
 .daun5 {
     position: absolute;
     right:0;
     max-width: 60px;
-    margin-bottom: 200px;
-    margin-right: 150px;
+    bottom: 200px;
+    right: 150px;
 
 }
 
 .menu {
     display: flex;
     align-items: center;
-    padding: 15%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
 }
 
 .menu-text h1 {
@@ -269,7 +276,96 @@ nav {
     text-shadow: 3.5px 3.5px 0px #FFBB0C;
     align-items: center;
     justify-content: center;
-    display:flex; 
+    display:flex;
+    margin-top: 200px;
+
+}
+
+
+.menu-text p {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #461A08;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 15px;
+    max-width: 1050px;
+    margin-top: 70px;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px); /* Card will move up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+
+.menu-item:active {
+    transform: scale(0.98); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 3px 0px #461A08;
+}
+
+.menu-item img {
+    max-width: 60%;
+    height: auto;
+    justify-content: center;
+}
+
+
+.menu-item h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #461A08;
+    margin-top: 10px;
+    width: 100%;
+    text-align:left;
+}
+
+.menu-item p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #461A08;
+    margin-top: 5px;
+    text-align:left;
+}
+
+.menu-item h6{
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    color: #FFBB0C;
+    text-shadow: 1px 1px 0px #461A08;
+    margin-top: 5px;
+    text-align:left;
+    margin-top: 20px;
+}
+
+.menu-item span {
+    color: #F2CF63;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    align-items: left;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -277,19 +373,23 @@ nav {
     .kuning,  
     .daun1, 
     .daun2, 
-    .burger2,
+    .hero-image,
     .daun3, 
-    .burger-right,
     .daun4, 
     .daun5 {
         display: none; 
     }
+
+    .burger2 {
+        position:absolute;
+        justify-content: center;
+    }
     .about-text h1 {
-        font-size: 36px;
+        font-size: 24px;
     }
 
-    .abour-text p {
-        font-size: 12px;
+    .about-text p {
+        font-size: 8px;
     }
 
     .kuning2 {
@@ -449,4 +549,3 @@ nav {
         border-radius: 30px;
     }
 } 
-*/
