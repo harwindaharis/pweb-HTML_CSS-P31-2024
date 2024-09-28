@@ -8,6 +8,7 @@ body {
 .instagram-post {
     text-align: center;
     padding: 20px 0;
+    margin-top: 150px;
 }
 
 .instagram-post h1 {
@@ -45,4 +46,10 @@ body {
     flex: 1;
     max-width: 300px;
     height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .post-container {
+        flex-direction: column;
+    }
 }

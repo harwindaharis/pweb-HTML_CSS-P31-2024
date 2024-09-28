@@ -1,6 +1,5 @@
 body {
     font-family: 'Poppins', sans-serif;
-<<<<<<< HEAD
     background-color: #f8e9c2;
     margin: 0;
     padding: 0;
@@ -9,6 +8,7 @@ body {
 .customer-says {
     text-align: center;
     padding: 20px 0;
+    margin-top: 150px;
 }
 
 .customer-says h1 {
@@ -79,14 +79,15 @@ body {
     margin-right: auto;
 }
 
-.burger-img {
-    width: 20px;
+.review-card img {
+    width: 70px;
     height: auto;
     object-fit: contain;
-=======
-    background-color: #b300cac9;
-    color: #333;
-    width: 100%;
-    overflow-x: hidden;
->>>>>>> 17ca9db3d55875be2884ced5e72e83c861e3d35c
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
 }
