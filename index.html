@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger Eat</title>
+    <title>It'slay</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Galada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="CSS/gallery.css">
@@ -13,7 +13,7 @@
     <section id="hero" class="Herosec">
         <nav>
             <div class="navbar">
-                <div class="logo">Burger<span>Eat</span></div>
+                <div class="logo">  Your's<span>Need</span></div>
                 <ul class="nav-links">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -35,19 +35,11 @@
             </div>
         </nav>
         
-        
-        
         <div class="hero">
-            <img src="image/Chillimerah.png" class="chili">
-            <img src="image/Chilliijo.png" class="chili2">
-            <img src="image/kuning.png" class="kuning">
             <div class="hero-text">
-                <h1>Bite into Burger Perfection!</h1>
-                <p>Craving a juicy, mouth-watering burger? Order now and enjoy the taste of perfection</p>
-                <a href="#catalog" class="button">Catalog</a>
-            </div>
-            <div class="hero-image">
-                <img src="image/burger.png" alt="">
+                <h1>Style and Comfort, <br> Just a Click Away</h1>
+                <p>Experience unforgettable shopping with high-quality products from various categories. Find your style and bring home beauty today!</p>
+                <a href="#catalog" class="button">Shop Now!</a>
             </div>
         </div>
     </section>
@@ -65,69 +57,16 @@
             <img src="image/Burgers.png" class="burger2">
     </section>
     <section class="menu">
-        <div class="menu-text"  id="catalog">
-                <h1 >Our Menu</h1>
-                <p>Get the perfect meal with our most popular burger combinations.</p>
-                </div>
-        <div class="menu-container">
-            <div class="menu-item">
-                <h3><span>★</span> 4.8</h3>
-                <img src="image/burger1.png" alt="">
-                <h2>Cheese Burger</h2>
-                <p>200 gr meat + Lettuce cheese + onion + tomato </p>
-                <h6>Rp. 25.000 </h6>
-             </div>
-             <div class="menu-item">
-                <h3><span>★</span> 4.7</h3>
-                <img src="image/burger2.png" alt="">
-                <h2>Chicken Burger</h2>
-                <p>200 gr chicken +cheese + onion+ saus + sayurs  </p>
-                <h6>Rp. 35.000 </h6>
-             </div>
-             <div class="menu-item">
-                <h3><span>★</span> 5.0</h3>
-                <img src="image/burger3.png" alt="">
-                <h2>Beef Burger</h2>
-                <p>300 gr meat + Lettuce cheese + onion + tomato  </p>
-                <h6>Rp. 30.000 </h6>
-             </div>
-             <div class="menu-item">
-                <h3><span>★</span> 4.8</h3>
-                <img src="image/burger4.png" alt="">
-                <h2>Double Beef</h2>
-                <p>400 gr meat + div + class + dahlah + bungkus  </p>
-                <h6>Rp. 30.000 </h6>
-             </div>
-             <div class="menu-item">
-                <h3><span>★</span> 5.0</h3>
-                <img src="image/burger5.png" alt="">
-                <h2>Magic Burger</h2>
-                <p>300 gr meat + 2 Lettuce cheese + onion + tomato  </p>
-                <h6>Rp. 30.000 </h6>
-             </div>
-             <div class="menu-item">
-                <h3><span>★</span> 4.7</h3>
-                <img src="image/burger6.png" alt="">
-                <h2>BBQ burger</h2>
-                <p>200 gr beef + cheese + onion + BBQ </p>
-                <h6>Rp. 30.000 </h6>
-             </div>
-             <div class="menu-item">
-                <h3><span>★</span> 5.0</h3>
-                <img src="image/burger7.png" alt="">
-                <h2>Fish Burger</h2>
-                <p>200 gr fish+ cheese + tartar sauce </p>
-                <h6>Rp. 25.000 </h6>
-             </div>
-             <div class="menu-item">
-                <h3><span>★</span> 4.0</h3>
-                <img src="image/burger8.png" alt="">
-                <h2>Healthy Burger</h2>
-                <p>300 gr meat + onion + tomato+ pemweb healthy  </p>
-                <h6>Rp. 38.000 </h6>
-                </div>
-        </section>
+        <div class="menu-text" id="catalog">
+            <h1>Our Menu</h1>
+            <p>Get the perfect meal with our most popular burger combinations.</p>
+        </div>
+        <div class="menu-container" id="menu-container">
+            <!-- Products will be inserted here -->
+        </div>
+        <script src="script.js"></script> <!-- Link to external JS file -->
 
+    </section>
         <section class="cte">
             <div class="cte-image">
                 <img src="image/cte.png" alt="">
@@ -212,6 +151,8 @@
     </section>
 
     <script>
+
+
 function toggleSidebar() {
     const sidebar = document.querySelector('.mobile-sidebar');
     if (sidebar.classList.contains('open')) {
@@ -234,5 +175,7 @@ function closeSidebar() {
 }
 
     </script>
+
+    
 </body>     
 </html>
